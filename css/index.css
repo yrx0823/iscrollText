@@ -1,0 +1,11 @@
+#wrapper{
+	position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top:44px;
+    bottom:44px;
+    left: 0;
+}
+#scroller{
+	position: absolute;
+}

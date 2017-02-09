@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>iscroll</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/iscroll.js"></script>
+	</head>
+	<body>
+		<header style="height: 44px;width:100%;position: absolute;background:pink;top:0;left:0"></header>
+		<div id="wrapper">
+			<div id="scroller">
+				<p>dsfdsafdsf</p>
+				<p>fsdfsdafsd</p>
+				<p>fdafddassdhjkf</p>
+				<p>fdsfadsafsdaf</p>
+				<p>fsadfsdfsd</p>
+				<p>fsdfsdafsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<p>fddsafsdfsdaf</p>
+				<input type="text" />
+				
+			</div>
+			
+		</div>
+		<footer style="height: 44px;width:100%;position: absolute;background:#333;bottom:0;left:0"></footer>
+		<input style="position:fixed;right: 50px;bottom:50px" type="button" value="点击回到顶部" />
+		
+		<script type="text/javascript">
+			var myScroll = new IScroll('#wrapper',{
+				mouseWheel:true,
+				scrollbars: true
+			});
+			console.dir(myScroll.options);
+			var input = document.getElementsByTagName("input")[1];
+			input.onclick = function(){
+				myScroll.scrollTo(0, 0, 1000, IScroll.utils.ease.elastic);
+			}
+			myScroll.on("scrollEnd",function(){
+				if(this.y> -200){
+					input.style.display = "none"
+				}else{
+					input.style.display = "block"
+				}
+			});
+			
+		</script>
+	</body>
+</html>
