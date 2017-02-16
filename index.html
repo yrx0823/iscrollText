@@ -5,24 +5,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<title>iscroll</title>
 		<link rel="stylesheet" href="css/index.css" />
-		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/iscroll-probe.js"></script>
 		<script tyle="text/javascript" src="js/main.js"></script>
 	</head>
-	<body>
-		<div class="header">header</div>  
+	<body style="width: 100%;height:100%">
+		
 		<div id="wrapper">  
 		    <div id="scroller">  
-		        <div id="pullDown">  
-		            <span class="pullDownLabel">下拉刷新</span>  
-		        </div>  
-		        <ul id="thelist">  
-		            <!--<li>原始数据</li>-->  
+		    	<header style="background: deeppink;">课程分类<input type="text" /></header>	
+		    	<ul style="background: yellow;">
+		    		<li>最新</li>
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
+		            <li>Pretty row 1</li> 
 		        </ul>  
-		        <div id="pullUp">  
-		            <span class="pullUpLabel">上拉加载更多</span>  
+		        <div id="pullUp" class="">  
+		        	<div class="pullUpLabel">加载更多>></div>  
 		        </div>  
-		    </div>  
-		</div>  
-		<div class="footer">footer</div>  
+			</div>  
+		</div>
+		<footer style="height: 100px;width: 100%;display: fixed;bottom:0;left: 0;">
+			
+		</footer>
 	</body>
 </html>
